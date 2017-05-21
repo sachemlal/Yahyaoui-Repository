@@ -1,0 +1,3 @@
+margeR 50
+pasdediscritisation 20
+
