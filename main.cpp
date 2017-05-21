@@ -36,7 +36,9 @@ void getData(const char* fileName)
   std::cout << "Les dimensions de la maison sont : (largeur : ["<< mesPieces[0].getMaxDx() << "] , hauteur : [" << mesPieces[0].getMaxDy() << "])"<< std::endl;
   std::cout << "Les pièces de la maisons sont : " << std::endl;
   for(i=0; i<mesPieces.size(); i++) {
-    std::cout << "Pièce " << (i+1) << " minDx : "<< mesPieces[i].getMinDx() << ", " << "maxDx : " << mesPieces[i].getMaxDx() << ", " << "minDy : " << mesPieces[i].getMinDy() << ", " << "maxDy : " << mesPieces[i].getMaxDy()<< std::endl;   
+    if(i > 0) {
+      std::cout << "Pièce " << (i+1) << " minDx : "<< mesPieces[i].getMinDx() << ", " << "maxDx : " << mesPieces[i].getMaxDx() << ", " << "minDy : " << mesPieces[i].getMinDy() << ", " << "maxDy : " << mesPieces[i].getMaxDy()<< std::endl;   
+    }
   }
   
 }
